@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="João Valdomiro Motors — compra, venda e avaliação de supercarros." />
+  <title>João Valdomiro Motors | Supercarros</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#inicio"><span>JV</span> JOÃO VALDOMIRO</a>
+    <nav>
+      <a href="#estoque">Estoque</a><a href="#servicos">Serviços</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a>
+    </nav>
+    <a class="nav-cta" href="#contato">Quero vender meu carro</a>
+    <button class="menu" aria-label="Abrir menu">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <p class="eyebrow">JOÃO VALDOMIRO MOTORS</p>
+        <h1>Máquinas que<br><em>não precisam</em><br>de explicação.</h1>
+        <p class="hero-text">Supercarros selecionados, procedência e atendimento exclusivo para quem transforma paixão em experiência.</p>
+        <div class="hero-actions"><a class="btn primary" href="#estoque">Ver supercarros <span>→</span></a><a class="btn ghost" href="#contato">Avaliar meu carro</a></div>
+        <div class="stats"><div><strong>+120</strong><small>CARROS NEGOCIADOS</small></div><div><strong>+8</strong><small>ANOS DE MERCADO</small></div><div><strong>100%</strong><small>ATENDIMENTO PERSONALIZADO</small></div></div>
+      </div>
+      <div class="scroll">SCROLL <span>↓</span></div>
+    </section>
+
+    <section class="inventory section" id="estoque">
+      <div class="section-head"><div><p class="eyebrow dark">ESTOQUE SELECIONADO</p><h2>Algumas máquinas<br><em>em destaque.</em></h2></div><a href="#contato" class="link">Quero encontrar meu carro →</a></div>
+      <div class="cars">
+        <article class="car"><div class="car-image lambo"></div><div class="car-info"><span>2024 • 2.100 km</span><h3>Lamborghini Revuelto</h3><p>6.5 V12 • Híbrido • 1.015 cv</p><strong>R$ 7.890.000</strong><button onclick="openCar('Lamborghini Revuelto')">Ver detalhes →</button></div></article>
+        <article class="car"><div class="car-image ferrari"></div><div class="car-info"><span>2023 • 4.800 km</span><h3>Ferrari 296 GTB</h3><p>3.0 V6 Biturbo • Híbrido • 830 cv</p><strong>R$ 4.690.000</strong><button onclick="openCar('Ferrari 296 GTB')">Ver detalhes →</button></div></article>
+        <article class="car"><div class="car-image porsche"></div><div class="car-info"><span>2022 • 7.300 km</span><h3>Porsche 911 GT3</h3><p>4.0 Boxer • Aspirado • 510 cv</p><strong>R$ 1.790.000</strong><button onclick="openCar('Porsche 911 GT3')">Ver detalhes →</button></div></article>
+      </div>
+    </section>
+
+    <section class="services section" id="servicos">
+      <div class="section-head"><div><p class="eyebrow">EXPERIÊNCIA JOÃO VALDOMIRO</p><h2>Mais do que comprar.<br><em>É fazer negócio certo.</em></h2></div></div>
+      <div class="service-grid">
+        <div class="service"><b>01</b><h3>Compra</h3><p>Encontramos o carro que combina com você, com curadoria e análise de procedência.</p></div>
+        <div class="service"><b>02</b><h3>Venda</h3><p>Seu supercarro recebe apresentação profissional e acesso a compradores qualificados.</p></div>
+        <div class="service"><b>03</b><h3>Avaliação</h3><p>Uma avaliação transparente considerando histórico, estado, mercado e especificação.</p></div>
+        <div class="service"><b>04</b><h3>Consultoria</h3><p>Suporte para escolher, negociar e fechar seu próximo carro com segurança.</p></div>
+      </div>
+    </section>
+
+    <section class="about section" id="sobre">
+      <div class="about-image"></div>
+      <div class="about-copy"><p class="eyebrow dark">JOÃO VALDOMIRO</p><h2>Paixão por carros.<br><em>Olhar para detalhes.</em></h2><p>Uma curadoria feita para quem não procura apenas um carro, mas uma máquina com história, personalidade e presença.</p><p>Do primeiro contato à entrega, cada etapa é conduzida de forma próxima e personalizada.</p><a class="btn dark-btn" href="#contato">Fale com João <span>→</span></a></div>
+    </section>
+
+    <section class="contact section" id="contato">
+      <div><p class="eyebrow">ATENDIMENTO EXCLUSIVO</p><h2>Seu próximo<br><em>supercarro começa aqui.</em></h2><p>Conte o que você procura. A equipe João Valdomiro entra em contato para entender seu momento e apresentar as possibilidades.</p></div>
+      <form id="contactForm"><input required name="name" placeholder="Seu nome" /><input required name="phone" placeholder="WhatsApp" /><select name="interest"><option value="">Tenho interesse em...</option><option>Comprar um supercarro</option><option>Vender meu carro</option><option>Avaliação</option><option>Consultoria</option></select><textarea name="message" placeholder="Conte um pouco do que você procura"></textarea><button class="btn primary" type="submit">Enviar solicitação →</button><small>Ao enviar, uma mensagem será preparada para contato pelo WhatsApp.</small></form>
+    </section>
+  </main>
+
+  <footer><div class="brand"><span>JV</span> JOÃO VALDOMIRO</div><p>Supercarros • Compra • Venda • Consultoria</p><p>© 2026 João Valdomiro Motors</p></footer>
+  <div class="modal" id="modal"><div class="modal-box"><button class="close" onclick="closeCar()">×</button><p class="eyebrow dark">DETALHES DO VEÍCULO</p><h2 id="modalTitle"></h2><p>Este veículo faz parte do estoque de apresentação. Entre em contato para receber fotos, histórico, opcionais, documentação e condições comerciais.</p><a class="btn primary" href="#contato" onclick="closeCar()">Tenho interesse →</a></div></div>
+  <script src="script.js"></script>
+</body>
+</html>
